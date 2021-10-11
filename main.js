@@ -16,6 +16,9 @@ const discountOver = (fullPrice / 100 * 40)
 if (userAge < 18) {
     discountPrice = (fullPrice - discountUnder);
 }
+else if (userAge > 65) {
+    discountPrice = (fullPrice - discountOver)
+}
 
 
 console.log(discountPrice);
